@@ -1,4 +1,5 @@
 import sys
+
 def xor_encrypt_decrypt(shellcode, key):
     """
     Chiffre ou déchiffre un shellcode en utilisant un chiffrement XOR.
@@ -10,6 +11,7 @@ def xor_encrypt_decrypt(shellcode, key):
     Returns:
         bytes: Le shellcode chiffré/déchiffré.
     """
+    # Applique un XOR entre chaque octet du shellcode et la clé
     return bytes([shellcode[i] ^ key[i % len(key)] for i in range(len(shellcode))])
 
 def main():
