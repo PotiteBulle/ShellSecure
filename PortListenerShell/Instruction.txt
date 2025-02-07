@@ -1,0 +1,19 @@
+Instructions pour compiler et tester
+
+1 -  Compilation du shellcode : 
+nasm -f elf32 PortListenerShell.asm -o PortListenerShell.o
+ld -m elf_i386 -s -o PortListenerShell PortListenerShell.o
+
+2 -  Extraire les octets du shellcode : 
+objdump -d PortListenerShell | grep -Po '\s\K[0-9a-f]{2}(?=\s)' | tr -d '\n' | sed 's/ /\\x/g'
+
+3 -  Compilez test_shellcode.c : 
+gcc -m32 -z execstack -o test_shellcode test_shellcode.c
+
+4 -  Exécutez le programme : // Connectez-vous au port 1337 depuis une autre machine ou terminal : 
+./test_shellcode
+
+exemple : nc 127.0.0.1 1337
+
+Avertissement
+Ce shellcode est fourni à des fins éducatives uniquement. Utilisez-le uniquement dans un environnement contrôlé et avec une autorisation explicite. Ne l'utilisez pas à des fins malveillantes.
