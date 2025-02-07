@@ -4,7 +4,12 @@
 
 ## Projets inclus
 - **PortListenerShell** : Un shellcode pour ouvrir un port et écouter les connexions entrantes.
-- D'autres exemples de shellcodes éducatifs à venir !
+- **Shellcode Crypter** : Outil pour chiffrer et déchiffrer des shellcodes en utilisant un chiffrement XOR simple.
+- **Shellcode Loader** : Programme pour charger et exécuter un shellcode en mémoire.
+- **Polymorphic Shellcode** : Générateur de shellcode polymorphe utilisant un chiffrement XOR simple.
+- **Shellcode pour les attaques de type "Process Hollowing"** : Exemple de technique de "Process Hollowing" pour injecter un shellcode dans un processus légitime.
+- **Shellcode pour les attaques de type "Privilege Escalation"** : Exemple de shellcode pour élever les privilèges sur un système Windows.
+- **Shellcode pour les attaques de type "Sandbox Evasion"** : Exemple de shellcode pour détecter et contourner les environnements sous sandbox.
 
 ## Objectif
 Ce dépôt est destiné à des fins d'apprentissage et de recherche en sécurité. Tous les exemples sont à utiliser uniquement dans un cadre légal et éthique, avec une autorisation explicite.
