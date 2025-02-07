@@ -1,6 +1,6 @@
 # ShellSecure
 
-**ShellSecure** est un dépôt éducatif dédié à des exemples de shellcodes sécurisés, conçus pour des tests de sécurité et du hacking éthique. Ce projet vise à aider les professionnels de la cybersécurité qui débute à comprendre et à prévenir les vulnérabilités potentiels.
+**ShellSecure** est un dépôt éducatif dédié à des exemples de shellcodes sécurisés, conçus pour des tests de sécurité et du hacking éthique. Ce projet vise à aider les professionnels de la cybersécurité qui débutent à comprendre et à prévenir les vulnérabilités potentielles.
 
 ## Projets inclus
 - **PortListenerShell** : Un shellcode pour ouvrir un port et écouter les connexions entrantes.
